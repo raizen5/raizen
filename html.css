@@ -1,0 +1,223 @@
+body
+  b ackground-color: white;
+  f ont-family: Comic Sans MS;
+  color: white;
+  t ext-align: center;
+}
+#313633
+
+button{
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: gold;
+  border-radius: ;
+  opacity: 85%;
+  display: inline-block;
+  transition-duration: 0.2s;
+}
+
+
+h2 {
+	color: white;
+    border-style: outset;
+   	border-radius: 8px;
+	border-bottom: 5px solid #990000;
+    background-color: red;
+}
+
+h4{
+	font-size: 18px;
+}
+
+h3{
+	font-size: 20px;
+	color: yellow;
+
+}
+
+p{
+	color: white;
+}
+
+strong{
+	color: gold;
+}
+
+#I{
+	font-size: 22px
+}
+a
+	c olor: lightblue;
+}
+
+#define{
+	color: gold;
+}
+
+hr{
+	border-style: solid;
+	color: red;
+}
+
+#html-button{
+	background: white;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+img{
+	border: solid black 0px;
+	margin: 4px 2px;
+	border-radius: 10px;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: consolas;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	background: #050801;
+	text-align: center;
+}
+#click{
+	background: #03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px #03e9f4,
+	            0 0 25px #03e9f4,
+	            0 0 50px #03e9f4,
+	            0 0 200px #03e9f4;
+	opacity:85%;
+}
+
+.click-index{
+	background: pink;
+	color: #050801;
+	box-shadow: 0 0 5px pink,
+	            0 0 25px pink,
+	            0 0 50px pink,
+	            0 0 200px pink;
+	opacity:85%;
+}
+
+a{
+	position: relative;
+	display: inline-block;
+	padding: 25px 30px;
+	margin: 10px 0;
+	color: #03e9f4;
+	font-size: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*overflow: hidden;*/
+	transition: 0.3s;
+	letter-spacing: 4px;
+}
+
+a:hover{
+	background: #03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px #03e9f4,
+	            0 0 25px #03e9f4,
+	            0 0 50px #03e9f4,
+	            0 0 200px #03e9f4;
+}
+
+
+#index-click {
+	display: inline-block;
+	padding: 12.5px 15px;
+	margin: 5px 0;
+	color: #050801;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*overflow: hidden;*/
+	transition: 0.3s;
+	letter-spacing: 4px;
+}
+
+#index {
+	display: inline-block;
+	padding: 12.5px 15px;
+	margin: 5px 0;
+	color: pink;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	/*overflow: hidden;*/
+	transition: 0.3s;
+	letter-spacing: 4px;
+}
+
+#index:hover{
+	background: pink;
+	color: #050801;
+	box-shadow: 0 0 5px pink,
+	            0 0 25px pink,
+	            0 0 50px pink,
+	            0 0 200px pink;
+}
+
+#scrollPath{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: rgba(255,255,255,0.05);
+}
+
+#progressbar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 50%;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	animation: animate 10s linear infinite;
+}
+
+#progressbar:before,
+#progressbar:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff, #00ffe7);
+	filter: blur(10px);
+}
+
+#preogressbar:after{
+	filter: blur(30px);
+}
+
+@keyframes animate{
+	0%,100%{
+		filter: hue-rotate(0deg);
+	}
+	50%{
+		filter: hue-rotate(360deg);
+	}
+}
+
+
+::-webkit-scrollbar{
+	width: 0;
+}
+
+<!--this is to delete normal scroll bar-->

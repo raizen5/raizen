@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="html.css">
+</head>
+<body>
+	<embed src= "fairy tail ost.mp3" autoplay="true" height= "0" width="0"> 
+	<audio id="player" autoplay loop>
+		<source src="fairy tail ost.mp3" type="audio/mp3">
+    </audio>
+	<iframe src="fairy tail ost.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
+	<div id="progressbar"></div>
+	<div id="scrollPath"></div>
+    <section>
+	<ul>
+		<a href="wen page home.html">
+			<span></span>
+		    <span></span>
+	    	<span></span>
+     		<span></span>
+	    	HOME
+        </a>
+	    <a href="lessons.html">
+	     	<span></span>
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    		LESSONS
+    	</a>
+    	<a href="skills.html">
+	    	<span></span>
+	    	<span></span>
+	    	<span></span>
+		    <span></span>
+	    	SKILLS
+    	</a>
+	</ul>
+	<ul>
+	    <a href="./html.html" class="click-index" id="index-click">
+	    	<span></span>
+	    	<span></span>
+	    	<span></span>
+	    	<span></span>
+    		HTML
+	    </a>
+	    <a href="./css.html" id="index">
+	     	<span></span>
+	     	<span></span>
+ 	    	<span></span>
+	    	<span></span>
+	    	CSS
+	    </a>
+	</ul>
+	<div id="top"><h1>LESSON : HTML</h1></div>
+	<img src="800px-HTML5_logo_and_wordmark.svg.png" height="200" width="200" alt="html picture">
+	<h2> LESSON INDEX </h2>
+	<br>
+	<ul>
+		<a href="#text" id="index">1-text</a>
+        <a href="#media" id="index">2-media</a>
+        <a href="#list" id="index">3-list</a>
+    </ul>
+    <ul>
+    	<a href="#table" id="index">4-table</a>
+    	<a href="#definition" id="index">5-definition</a>
+    	<a href="#form" id="index">6-Form</a>
+    </ul>
+    <br>
+	<div id="html_plan"><h2>HTML PLAN</h2>
+	<p><strong><.!DOCTYPE html>
+		<br>
+		<.html>
+		<br>
+		<.head>
+		<br>
+		<./head>
+		<br>
+		<.body>
+		<br>
+		<./body>
+		<br>
+		<./html>
+	</strong></p>
+    </div>
+	<div id="html_tags"><h2>HTML TAGS</h2>
+
+		<div id="head_tags"><h3>I-HEAD TAGS</h3>
+
+	 		<strong><.title></strong> --> the page title
+			<br>
+			<strong><.meta charset="utf-8"></strong> --> to avoid errors
+		</div>
+
+		<div id="body_tags"><h3>II-BODY TAGS</h3>
+
+			<div id="text"><h4><strong>--> 1-TEXT <--</strong></h4>
+	    		<p><strong><.br></strong> --> line breaker --> one enpty line</p>
+	            <p><strong><.h1-h6></strong> --> Headers and sub-headers</p>
+	    	    <p><strong><.p></strong> --> Paragraph</p>
+        		<p><strong><.div></strong> --> Divsion</p>
+	        	<p><strong><.em></strong> --> italic</p>
+    		    <p><strong><.strong></strong> --> bold</p>
+    		    <p><strong><.!--comment--></strong> --> add an invisible comment</p>
+    		</div>
+    		<br>
+    
+
+            <div id="media"><h4><strong>--> 2-MEDIA <--</strong></h4>
+	        	<p><strong><.img src="image source" width="" height="" alt="error message"></strong>  --> add image file</p>
+	         	<p><strong><.video src="video source" width="" height="" controls>the </strong> -->  add video file</p>
+	         	<p><strong><.a href="link" target="_blank"(to open on a new tab)></strong> --> anchor</p>
+	        </div>
+	        <br>
+			
+
+	        <div id="list"><h4><strong>--> 3-LIST <--</strong></h4>
+	        	<p><strong><.ul></strong> --> Unordered List</p>
+	        	<p><strong><.ol></strong> --> Ordred List</p>
+	         	<p><strong><.li></strong> --> List Item</p>
+	        </div>
+	        <br>
+		    
+
+	        <div id="table"><h4><strong>--> 4-TABLE <--</strong></h4>
+	        	<p><strong><.table></strong> --> add a table</p>
+	        	<p><strong><.tr></strong> --> Table Row --> add a line</p>
+	         	<p><strong><.th></strong> --> Table Header</p>
+	        	<p><strong><.td></strong> --> Tabla Data --> add a case</p>
+	        </div>
+	        <br>
+ 
+	        <div id="definition"><h4><strong>--> 5-DEFINITION <--</strong></h4>
+	         	<p><strong><.dl></strong> --> Definition List</p>
+	        	<p><strong><.dt></strong> --> the thing that we'll define</p>
+	         	<p><strong><.dd></strong> --> the defenition</p>
+	        </div>
+	        <br>
+
+	        <div id="form"><h4><strong>--> 6-FORM <--</strong></h4>
+	         	<p><strong><.dl></strong> --> Definition List</p>
+	        	<p><strong><.dt></strong> --> the thing that we'll define</p>
+	         	<p><strong><.dd></strong> --> the defenition</p>
+	        </div>
+	        <br>
+
+	    </div>
+	</div>
+    <a href="https://en.wikipedia.org/wiki/HTML5">Click Here For More Informations</a>
+    <center><a href="#top">Return To The Top</a></center>
+    </section>
+    <section>
+   	<script type="text/javascript">
+		let progress = document.getElementById('progressbar');
+		let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+		window.onscroll = function() {
+			let progressHeight = (window.pageYOFFset / totalHeight) * 100;
+			progress.style.height = progressHeight + "%";
+		}
+	</script>
+    </section>
+</body>
+</html>
